@@ -1,0 +1,3 @@
+Xsession: X session started for pi at Tue Jan 21 15:18:19 EST 2014
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"

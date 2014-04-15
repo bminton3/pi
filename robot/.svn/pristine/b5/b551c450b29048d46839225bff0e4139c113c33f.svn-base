@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+$(function() 
+	{
+	$('a#forward').bind('click', function()
+		{
+		$.getJSON('/accel', {a:1})
+		});
+	});
+$(function()
+        {
+        $('a#backward').bind('click', function()
+                {
+                $.getJSON('/accel', {a:-1})
+                });
+        });
+$(function()
+        {
+        $('a#left').bind('click', function()
+                {
+                $.getJSON('/turn', {t:-1})
+                });
+        });
+$(function()
+        {
+        $('a#right').bind('click', function()
+                {
+                $.getJSON('/turn', {t:1})
+                });
+        });
+</script> 
+
+<center>
+
+<table>
+	<tr>
+		<td></td>
+		<td><a href="javascript:void();" id="forward">&#x25B2;</a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><a href="javascript:void();" id="left">&#9668;</a></td>
+		<td><object data=http://gundersoncorp.mooo.com:8091 width="640" height="480"> <embed src=http://gundersoncorp.mooo.com:8091 width="640" height="480"> </embed> Error: Embedded data could not be displayed. </object></td>
+		<td><a href="javascript:void();" id="right">&#9658;</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><a href="javascript:void();" id="backward">&#x25BC;</a></td>
+		<td></td>
+	</tr>
+</table>
+</center>
+
+{% endblock %}

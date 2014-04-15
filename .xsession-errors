@@ -1,0 +1,35 @@
+Xsession: X session started for pi at Tue Jan 21 17:17:24 EST 2014
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1729 requests (1726 known processed) with 0 events remaining.
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":0"
+      after 36 requests (36 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Xsession: X session started for pi at Thu Jan 23 08:26:10 EST 2014
+X Error of failed request:  BadValue (integer parameter out of range for operation)
+  Major opcode of failed request:  109 (X_ChangeHosts)
+  Value in failed request:  0x5
+  Serial number of failed request:  6
+  Current serial number in output stream:  8
+localuser:pi being added to access control list
+Obt-Message: XKB extension is not present on the server or too old
+Obt-Message: Xinerama extension is not present on the server
+Obt-Message: XRandR extension is not present on the server
+Xlib:  extension "RANDR" missing on display ":1".
+Xlib:  extension "RANDR" missing on display ":1".
+Xlib:  extension "RANDR" missing on display ":1".
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+Xsession: X session started for pi at Thu Jan 23 08:28:46 EST 2014
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1815 requests (1812 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Xsession: X session started for pi at Sun Jan 26 14:04:26 EST 2014
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1981 requests (1981 known processed) with 0 events remaining.

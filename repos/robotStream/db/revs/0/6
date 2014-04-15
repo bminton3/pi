@@ -1,0 +1,111 @@
+id: h-3.0.r6/0
+type: file
+pred: h-3.0.r4/46
+count: 2
+text: 1 0 488 858 c57dcdd98d8669861e762301f1c1b9ec da640b6278b7a303ddb85f41989ed29c7e1656b5 5-5/_1
+cpath: /robotStreamController.py
+copyroot: 0 /
+
+PLAIN
+K 11
+AFMotor.cpp
+V 19
+file 0-3.0.r3/10583
+K 9
+AFMotor.h
+V 19
+file 2-3.0.r3/11603
+K 9
+AFMotor.o
+V 19
+file 3-3.0.r3/13455
+K 8
+Makefile
+V 18
+file 4-3.0.r3/8521
+K 11
+NewPing.cpp
+V 19
+file 5-3.0.r3/10403
+K 9
+NewPing.h
+V 19
+file 6-3.0.r3/11426
+K 9
+NewPing.o
+V 19
+file 7-3.0.r3/13159
+K 6
+README
+V 17
+file 0-5.0.r5/306
+K 15
+TimedAction.cpp
+V 18
+file 8-3.0.r3/8961
+K 13
+TimedAction.h
+V 18
+file 9-3.0.r3/9511
+K 13
+TimedAction.o
+V 19
+file a-3.0.r3/11196
+K 16
+controlMotor.bak
+V 19
+file b-3.0.r3/10949
+K 16
+controlMotor.hex
+V 18
+file c-3.0.r3/9142
+K 16
+controlMotor.ino
+V 18
+file d-3.0.r3/9327
+K 14
+controlMotor.o
+V 19
+file e-3.0.r3/11846
+K 14
+mjpgStrace.out
+V 19
+file f-3.0.r3/13685
+K 9
+nohup.out
+V 19
+file g-3.0.r3/12917
+K 24
+robotStreamController.py
+V 15
+file h-3.0.r6/0
+K 9
+runCamera
+V 18
+file i-3.0.r3/8735
+K 6
+static
+V 18
+dir j-3.0.r3/10101
+K 10
+strace.out
+V 19
+file o-3.0.r3/10222
+K 9
+templates
+V 18
+dir p-3.0.r3/12791
+END
+ENDREP
+id: 0.0.r6/1131
+type: dir
+pred: 0.0.r5/1404
+count: 6
+text: 6 200 918 918 260142f0c2f22a8237b1acf5810411b2
+cpath: /
+copyroot: 0 /
+
+h-3.0.t5-5 modify-file true false /robotStreamController.py
+
+
+1131 1261

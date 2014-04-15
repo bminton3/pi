@@ -1,0 +1,136 @@
+ * Running on http://0.0.0.0:8092/
+ * Restarting with reloader
+Traceback (most recent call last):
+  File "run.py", line 1, in <module>
+    from flask import Flask, render_template, request, jsonify
+  File "/usr/local/lib/python2.7/dist-packages/flask/__init__.py", line 21, in <module>
+    from .app import Flask, Request, Response
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 22, in <module>
+    from werkzeug.routing import Map, Rule, RequestRedirect, BuildError
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/routing.py", line 126, in <module>
+    ''', re.VERBOSE)
+  File "/usr/lib/python2.7/re.py", line 190, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python2.7/re.py", line 240, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python2.7/sre_compile.py", line 504, in compile
+    code = _code(p, flags)
+  File "/usr/lib/python2.7/sre_compile.py", line 486, in _code
+    _compile_info(code, p, flags)
+  File "/usr/lib/python2.7/sre_compile.py", line 365, in _compile_info
+    lo, hi = pattern.getwidth()
+  File "/usr/lib/python2.7/sre_parse.py", line 166, in getwidth
+    i, j = av[2].getwidth()
+  File "/usr/lib/python2.7/sre_parse.py", line 162, in getwidth
+    i, j = av[1].getwidth()
+  File "/usr/lib/python2.7/sre_parse.py", line 166, in getwidth
+    i, j = av[2].getwidth()
+  File "/usr/lib/python2.7/sre_parse.py", line 162, in getwidth
+    i, j = av[1].getwidth()
+KeyboardInterrupt
+ * Running on http://0.0.0.0:8092/
+ * Restarting with reloader
+ * Running on http://0.0.0.0:8090/
+ * Restarting with reloader
+67.191.155.115 - - [30/Jan/2014 18:41:49] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:41:49] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:41:50] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 18:42:12] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:42:12] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 18:42:13] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:42:13] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 18:42:14] "GET /accel?a=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:42:15] "GET /accel?a=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:42:16] "GET /turn?t=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:42:16] "GET /turn?t=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:42:24] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:42:40] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 18:43:23] "GET /accel?a=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:24] "GET /accel?a=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:25] "GET /turn?t=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:25] "GET /turn?t=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:25] "GET /turn?t=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:25] "GET /turn?t=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:26] "GET /turn?t=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:26] "GET /turn?t=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:27] "GET /accel?a=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:27] "GET /accel?a=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:27] "GET /accel?a=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:28] "GET /accel?a=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:28] "GET /accel?a=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:43:28] "GET /accel?a=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:44:11] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:44:11] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 18:44:11] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:44:12] "GET /accel?a=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:44:13] "GET /accel?a=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:44:14] "GET /turn?t=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:44:14] "GET /turn?t=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:44:14] "GET /turn?t=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:44:15] "GET /accel?a=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:58:42] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:59:08] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:59:09] "GET /static/css/main.css HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:59:11] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:59:11] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 18:59:35] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 18:59:35] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 19:00:32] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:00:32] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:00:33] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 19:01:04] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:01:04] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:01:04] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 19:01:07] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:01:07] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 19:01:10] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:01:10] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 19:01:56] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:01:57] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 19:01:59] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:01:59] "GET /static/css/main.css HTTP/1.1" 304 -
+67.191.155.115 - - [30/Jan/2014 19:03:07] "GET / HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:03:07] "GET /static/css/main.css HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:03:17] "GET /accel?a=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:03:17] "GET /accel?a=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:03:18] "GET /turn?t=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:03:18] "GET /turn?t=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:03:19] "GET /accel?a=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:03:19] "GET /turn?t=1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:03:19] "GET /accel?a=-1 HTTP/1.1" 200 -
+67.191.155.115 - - [30/Jan/2014 19:03:20] "GET /turn?t=-1 HTTP/1.1" 200 -
+ * Detected change in 'routes.py', reloading
+accelerating  1
+accelerating  1
+turning  -1
+turning  -1
+accelerating  1
+accelerating  -1
+turning  -1
+turning  1
+turning  1
+turning  1
+turning  -1
+turning  -1
+accelerating  1
+accelerating  1
+accelerating  1
+accelerating  -1
+accelerating  -1
+accelerating  -1
+accelerating  1
+accelerating  -1
+turning  -1
+turning  1
+turning  -1
+accelerating  -1
+accelerating  1
+accelerating  -1
+turning  -1
+turning  -1
+accelerating  1
+turning  1
+accelerating  -1
+turning  -1
+ * Running on http://0.0.0.0:5000/
+ * Restarting with reloader

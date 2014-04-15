@@ -1,0 +1,81 @@
+#include "NewPing.h"
+#include "AFMotor.h"
+
+#define TRIGGER_PIN  2  // Arduino pin tied to trigger pin on the ultrasonic sensor.
+#define ECHO_PIN     13  // Arduino pin tied to echo pin on the ultrasonic sensor.
+#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
+#define SPEED 1
+
+/// HARDWARE ///
+// Ultrasonic sensor
+NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and maximum distance.
+// DC motor 2
+AF_DCMotor motor2(2, MOTOR12_2KHZ);
+AF_DCMotor motor1(1, MOTOR12_2KHZ);
+
+void setup() 
+{
+  Serial.begin(9600); // Open serial monitor at 9600 baud to see ping results.
+  // turn on motor
+  motor1.setSpeed(100);
+  motor2.setSpeed(100);
+ 
+  motor1.run(FORWARD);
+  motor2.run(FORWARD);
+}
+
+void loop() 
+{
+  delay(50);                      // Wait 50ms between pings (about 20 pings/sec). 29ms should be the shortest delay between pings.
+  unsigned int uS = sonar.ping(); // Send ping, get ping time in microseconds (uS).
+  unsigned int distance = uS / US_ROUNDTRIP_CM;
+  unsigned int i = 100;
+  motor1.setSpeed(100);
+  motor2.setSpeed(100);
+  
+  Serial.print("Ping: ");  
+  Serial.print(distance); // Convert ping time to distance in cm and print result (0 = outside set distance range)
+  Serial.println("cm");
+  
+  motor1.run(RELEASE);
+  motor2.run(RELEASE);
+  
+  
+  if (distance < 20 && distance > 0)
+  {
+//    motor1.setSpeed(255);
+//    motor2.setSpeed(255);
+    motor1.run(BACKWARD);
+    motor2.run(BACKWARD);
+    while (i < 200)
+    {
+      delay(10); 
+      motor1.setSpeed(i);
+      motor2.setSpeed(i);
+      i++;
+    }
+    while (i > 50)
+    {
+      delay(10);
+      motor1.setSpeed(i);
+      motor2.setSpeed(i);
+      i--;
+    } 
+    i = 0;
+    // Rotate the robot slightly
+//    motor2.setSpeed(150);
+//    motor1.setSpeed(150);
+    motor1.run(BACKWARD);
+    motor2.run(FORWARD);
+    delay(1000);
+    motor1.run(RELEASE);
+    motor2.run(RELEASE);
+  }
+  else
+  {
+    motor2.run(FORWARD);
+    motor1.run(FORWARD);
+  }
+    
+    
+}

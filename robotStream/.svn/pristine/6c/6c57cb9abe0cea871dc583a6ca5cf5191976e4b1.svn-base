@@ -1,0 +1,88 @@
+#include "NewPing.h"
+#include "AFMotor.h"
+#include "TimedAction.h"
+
+#define TRIGGER_PIN  2  // Arduino pin tied to trigger pin on the ultrasonic sensor.
+#define ECHO_PIN     13  // Arduino pin tied to echo pin on the ultrasonic sensor.
+#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
+#define SPEED 1
+#define LEDPIN 	     13
+
+int speed =         0;
+int desired_speed = 0;
+int max_speed =     255;
+
+boolean ledState = false;
+
+/// HARDWARE ///
+// Ultrasonic sensor
+NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and maximum distance.
+// DC motor 2
+AF_DCMotor motor2(2, MOTOR12_2KHZ);
+AF_DCMotor motor1(1, MOTOR12_2KHZ);
+
+void setup() 
+{
+  Serial.begin(9600); // Open serial monitor at 9600 baud to see ping results.
+  // turn on motor
+  motor1.setSpeed(100);
+  motor2.setSpeed(100);
+
+  pinMode(LEDPIN, OUTPUT);
+  digitalWrite(LEDPIN, OUTPUT);
+
+  while (!Serial) {
+	// WAIT to connect
+  }
+}
+
+void blink()
+{
+  ledState ? ledState = false : ledState = true;
+  digitalWrite(LEDPIN, ledState);
+  Serial.print(ledState);
+}
+
+void checkSerial()
+{
+  if (Serial.available())
+  {
+    byte val = Serial.read();
+    if (val > 33) // 33 is first visible char in ascii (!)
+    {
+      blink();
+      Serial.print("LED Blinked");
+
+    }
+    if (val == 'w')
+    {
+      motor1.setSpeed(250);
+      motor2.setSpeed(250);
+      motor1.run(FORWARD);
+      motor2.run(FORWARD);
+    }
+    else
+    {
+      motor1.run(RELEASE);
+      motor2.run(RELEASE);
+    }
+
+  }
+}
+
+// TimedAction initialization
+// blinks led
+TimedAction blinkAction = TimedAction(1000, blink);
+// checks serial connection
+TimedAction serialAction = TimedAction(50, checkSerial);
+
+void loop() 
+{
+  blinkAction.check();
+  serialAction.check();
+  //if (Serial.available() > 0)
+  //{
+  //  flash(Serial.read() );
+  //  Serial.print('312');
+  //}
+}

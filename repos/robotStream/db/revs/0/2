@@ -1,0 +1,51 @@
+PLAIN
+END
+ENDREP
+id: 0.0.r2/17
+type: dir
+pred: 0.0.r1/81204
+count: 2
+text: 2 0 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /
+copyroot: 0 /
+
+1o-1.0.r1/77818 delete-dir false false /static
+
+1m-1.0.r1/77940 delete-file false false /strace.out
+
+1w-1.0.r1/78123 delete-file false false /NewPing.cpp
+
+1u-1.0.r1/78305 delete-file false false /AFMotor.cpp
+
+0-1.0.r1/78487 delete-file false false /robotStreamController.py
+
+3-1.0.r1/78673 delete-file false false /controlMotor.bak
+
+5-1.0.r1/78854 delete-file false false /NewPing.h
+
+7-1.0.r1/79030 delete-file false false /AFMotor.h
+
+9-1.0.r1/79914 delete-dir false false /templates
+
+h-1.0.r1/80040 delete-file false false /nohup.out
+
+j-1.0.r1/80215 delete-file false false /mjpgStrace.out
+
+n-1.0.r1/73710 delete-file false false /runCamera
+
+l-1.0.r1/73937 delete-file false false /Makefile
+
+p-1.0.r1/74108 delete-file false false /TimedAction.cpp
+
+16-1.0.r1/74289 delete-file false false /controlMotor.hex
+
+r-1.0.r1/75810 delete-dir false false /.lib
+
+18-1.0.r1/75929 delete-file false false /controlMotor.ino
+
+1a-1.0.r1/76115 delete-file false false /TimedAction.h
+
+1c-1.0.r1/77277 delete-dir false false /.dep
+
+
+17 140

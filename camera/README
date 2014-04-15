@@ -1,0 +1,5 @@
+type screen ./runCamera 
+then do CTRL-a + d to detach. meaning press Ctrl+a and then d
+
+
+TODO autostart the camera maybe.

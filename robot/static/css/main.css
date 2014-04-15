@@ -1,0 +1,28 @@
+body
+	{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica";
+	color: #444;
+	}
+a
+	{
+	text-decoration: none;
+	color: #444;
+	font-size: 72pt;
+	}
+a:hover
+	{
+	color: #aaccff;
+	}
+a:focus
+	{
+	color: ##663311;
+	}
+table, tr, td
+	{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	text-align:center;
+	}

@@ -1,0 +1,19 @@
+Main project files: /home/rpi/robotStream
+Main file to run to start robot stream: robotStreamController.py
+svn repository location: file://localhost/home/pi/repos/robotStream
+
+
+** SVN COMMANDS **
+commit a change: svn commit -m 'comment about change'
+
+checkout a project: svn co file://localhost/home/pi/repos/projectName
+
+view changelog: svn log file://localhost/home/pi/repos/projectName
+
+view changelog of a certain file: svn log filename
+
+get URL of file: svn info filename
+
+compare a file to an older version: svn diff -r # filename   
+	ex: svn diff -r 3 robotStreamController.py
+

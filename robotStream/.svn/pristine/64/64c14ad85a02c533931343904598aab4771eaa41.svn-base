@@ -1,0 +1,5 @@
+#!/bin/bash
+[ ! -d /tmp/stream ] && mkdir /tmp/stream
+
+raspistill --hflip --vflip --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 25 -t 9999999 -th 0:0:0 &
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /home/pi/robotStream -p 8091"
